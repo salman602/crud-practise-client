@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import AddProduct from './components/AddProduct/AddProduct';
 import ManageProducts from './components/ManageProducts/ManageProducts';
 import Header from './components/Header/Header';
+import UpdateProduct from './components/UpdateProduct/UpdateProduct';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/products/add">
             <AddProduct></AddProduct>
+          </Route>
+          <Route path="/products/update/:id">
+            <UpdateProduct></UpdateProduct>
           </Route>
         </Switch>
       </BrowserRouter>
